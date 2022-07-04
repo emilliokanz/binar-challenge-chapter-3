@@ -29,6 +29,9 @@ h3 {
   color: white; 
   font-family: 'Bebas Neue', cursive; font-size: 25px;
 }
+h6 {
+  color: white;
+}
 #home-page-container {
   background-image: url(../../image/main-bg.jpg);
   position: relative;
@@ -250,4 +253,101 @@ h3 {
   padding: 5% 10% 10% 5%;
   padding-bottom: 10%;
   padding-right: 10%;
+}
+
+/* Top Scores Page */
+#scores-container {
+  background-image: url(../../image/top-score-bg.png);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+  padding-bottom: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+.card {
+  background:rgb(51, 49, 49);
+  max-height: 250px;
+  max-width: 500px; 
+}
+.card-body {
+  max-height: 250px;
+  max-width: 500px;
+  min-width: 300px; 
+  margin-bottom: 100px; 
+}
+.profile-image {
+  position: absolute;
+  width: 90px;
+  border-radius: 50%;
+  z-index: 2;
+}
+.ellipse-image {
+  width: 100px;
+  position: absolute;
+  z-index: 1;
+  left: 20px;
+}
+.twitter-image {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
+.card-title {
+  color: rgb(201, 146, 46) ;
+  position: relative;
+  left: 120px;
+}
+.description {
+  color: rgb(117, 115, 115);
+}
+.card-text {
+  color: white;
+  padding-top: 50px;
+}
+.card-date {
+  margin-top: 5%;
+}
+#scores-title-container h6 {
+  color: white;
+}
+#scores-title-container {
+  padding-top: 15%;
+}
+#see-more-button-container {
+  text-align: left; 
+  padding-top: 10% 
+}
+
+/* News Letter Page */
+.newsletter-section {
+  background-color: black;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+  background-repeat: no-repeat;
+}
+#footer {
+  background-color: rgba(0, 0, 0) !important;
+  border-bottom: 1px solid white ;
+  margin-bottom: 15px;
+}
+.terms-border {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+li::marker {
+  color: transparent;
+}
+#twitter-icon {
+  fill: white !important
 }
