@@ -326,6 +326,15 @@ h6 {
   text-align: left; 
   padding-top: 10% 
 }
+.card-1 {
+  right: 50px ;
+}
+.card-2 {
+  margin-right: 100px ;
+}
+.card-3 {
+  margin-right: 60px ;
+}
 
 /* News Letter Page */
 .newsletter-section {
