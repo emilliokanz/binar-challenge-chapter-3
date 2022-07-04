@@ -268,27 +268,38 @@ h6 {
   background-position: center;
   background-size: cover;
   min-height: 800px;
-  padding: 5%;
+  padding: 5% 10% 40% 10%;
   padding-bottom: 40%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between
 }
 #cards-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  position: relative;
   gap: 10%;
   padding-bottom: 10%;
 }
 .card {
+  position: absolute;
   background:rgb(51, 49, 49);
   max-height: 250px;
-  max-width: 500px; 
+  width: 500px; 
+}
+.card-1 {
+  right: 10%;
+}
+.card-2 {
+  top: 120%;
+  right: 10%;
+}
+.card-3 {
+  top: 120%;
+  left: 30%;
 }
 .card-body {
   max-height: 250px;
-  max-width: 500px;
   min-width: 300px; 
   margin-bottom: 100px; 
 }
@@ -329,6 +340,7 @@ h6 {
 }
 #scores-title-container {
   padding-top: 15%;
+  padding-left: 5%;
 }
 #see-more-button-container {
   text-align: left; 
