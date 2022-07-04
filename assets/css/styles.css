@@ -1,0 +1,244 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+/* Home Page */
+
+#navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#icon {
+  width: 150px ;
+  height: auto ;
+}
+h1 {
+  text-align: center; 
+  font-family: 'Bebas Neue', cursive; 
+  font-size: 80px;
+}
+h2 {
+ 
+  color: white; 
+  font-family: 'Bebas Neue', cursive; font-size: 50px;
+}
+h3 {
+ 
+  color: white; 
+  font-family: 'Bebas Neue', cursive; font-size: 25px;
+}
+#home-page-container {
+  background-image: url(../../image/main-bg.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 5%;
+}
+#list-button:hover {
+  background-color: rgba(0, 0, 0, 0) ;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  transition: 0.2s ease-in;
+}
+#list-icon {
+  fill: white;
+}
+#play-button-container {
+  text-align: center; 
+  padding-top: 5% 
+}
+#play-button {
+  font-family: 'Open Sans', sans-serif;
+  padding: 15px 50px 15px 50px;
+}
+#play-button:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.2s ease-in;
+}
+#header-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15%;
+}
+#scroll-button-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25%;
+}
+.scroll-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0px;
+  background: rgb(0, 0, 0, 0);
+}
+.div.scroll-button:hover img.scroll-icon {
+  transform: translate(0,10px);
+  transition:  0.2s ease-in;
+}
+#scroll-text {
+  color: white;
+}
+#scroll-icon:hover {
+  transform: translate(0,10px);
+  transition:  0.2s ease-in;
+}
+
+/* The Games Page */
+#the-games-container {
+  background-image: url("../../image/the-games-bg.jpg");
+  position: relative;
+  background-position: center;
+  justify-content: space-evenly;
+  background-size: cover;
+  padding: 15% 5%;
+  display: flex;
+  flex-direction: row;
+}
+#the-games-text-container {
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+.carousel {
+  max-width: 1500px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  margin: 0 10px !important;
+  background-color: rgba(255, 255, 255, 0) !important;
+  border: 2px solid white !important;
+  border-radius: 100%;
+}
+.carousel-control-prev-icon {
+  background-image: url(../../image/switch-left.svg) !important;
+}
+.carousel-control-next-icon {
+  background-image: url(../../image/switch-right.svg) !important;
+}
+
+/* features Page */
+
+#features-container {
+  background-image: url(../../image/features.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding: 15% 0;
+  display: flex;
+ 
+}
+#features-text-container {
+  margin: 0 0 0 60%;
+  max-width: 500px;
+  text-align: left;
+}
+#features-description {
+  text-align: left;
+}
+.container-timeline {
+  position: relative;
+  margin: 0 auto;
+}
+
+.container-timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: -2.3%;
+  margin-left: -19px;
+  margin-top: 20px;
+  height: 182px;
+}
+
+.ellipse::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -40px;
+  background-color: white;
+  top: 20px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.features2::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -40px;
+  background-color: transparent;
+  border: 2px solid white;
+  top: 202px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.features3::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: -40px;
+  background-color: transparent;
+  border: 2px solid white;
+  top: 280px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.feature-title1 h3 {
+  color: rgb(201, 146, 46);
+  margin-top: 9.6%;
+  padding-top: 3%;
+  
+}
+.feature-title1 h5 {
+  color: white;
+}
+
+.feature-title2 h3 {
+  color: rgb(201, 146, 46);
+  margin-top: 19.5%;
+}
+
+.feature-title3 h3 {
+  color: rgb(201, 146, 46);
+  margin-top: 9.6%;
+}
+
+/* System Requirements Page */
+#system-page-container {
+  background-image: url(../../image/requirements.png);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  padding: 5%;
+}
+.center-text h6 {
+  text-align: center;
+  color: white;
+}
+#requirements-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 5%;
+}
+#requirements-grid {
+  display: grid;
+  grid-template-columns: 2 1fr;
+  grid-template-rows: 3 1fr;
+}
